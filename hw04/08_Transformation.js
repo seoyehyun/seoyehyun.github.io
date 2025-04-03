@@ -56,8 +56,8 @@ function setupAxesBuffers(shader) {
     gl.bindVertexArray(axesVAO);
 
     const axesVertices = new Float32Array([
-        -0.8, 0.0, 0.8, 0.0,  // x축
-        0.0, -0.8, 0.0, 0.8   // y축
+        -1.0, 0.0, 1.0, 0.0,  // x축
+        0.0, -1.0, 0.0, 1.0   // y축
     ]);
 
     const axesColors = new Float32Array([
