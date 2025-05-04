@@ -45,7 +45,7 @@ let phongShader;
 const cone = new Cone(gl, 32);
 const lamp = new Cube(gl);
 
-const cameraPos = vec3.fromValues(0, 0, -3);
+const cameraPos = vec3.fromValues(0, 0, 3);
 const lightPos = vec3.fromValues(1.0, 0.7, 1.0);
 const lightSize = vec3.fromValues(0.1, 0.1, 0.1);
 
@@ -126,7 +126,6 @@ function initWebGL() {
     canvas.height = 700;
     resizeAspectRatio(gl, canvas);
     gl.viewport(0, 0, canvas.width, canvas.height);
-    gl.clearColor(0.7, 0.8, 0.9, 1.0);
     
     return true;
 }
